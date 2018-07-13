@@ -3,9 +3,8 @@
 <%=@post[:name]%><br>
 <%=@post[:content]%><br>
 
-
-
-<form action="/posts/<%= @posts.id %>" method="post">
+binding.pry
+<form action="/posts/<%=@posts.id%>" method="post">
     <input id="hidden" type="hidden" name="_method" value="patch">
     <input type="text" ...>
 </form>
