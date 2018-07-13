@@ -2,6 +2,7 @@
 
  <%=@post[:name]%>
  <%=@post[:content]%>
+ <input id="hidden" type="hidden" name="_method" value="patch">
  <<form action="/posts/<%=@post[:id]%>/delete" method="post">
    <input type="submit" value="delete">
  </form>
