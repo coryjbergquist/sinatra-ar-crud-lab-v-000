@@ -30,7 +30,7 @@ class ApplicationController < Sinatra::Base
   end
 
   delete '/posts/:id/delete' do
-    Post.delete(id: params[:id])
+    Post.destroy(id: params[:id])
   end
 
 
