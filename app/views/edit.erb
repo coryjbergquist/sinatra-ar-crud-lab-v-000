@@ -4,7 +4,7 @@
 <%=@post[:content]%><br>
 
 
-<form action="/posts/:id" method="post">
+<form action="/posts/<%=@post[:id]%>" method="post">
   <input id="hidden" type="hidden" name="_method" value="patch">
   <input type="text" name="name" placeholder="post name">
   <input type="textarea" name="content" placeholder="post content">
