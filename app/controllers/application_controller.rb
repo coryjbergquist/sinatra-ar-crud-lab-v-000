@@ -24,7 +24,7 @@ class ApplicationController < Sinatra::Base
     erb :edit
   end
 
-  patch '/models/:id' do
+  patch '/posts/:id' do
     binding.pry
     Post.update(params[:id])
   end
