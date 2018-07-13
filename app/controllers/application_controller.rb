@@ -29,7 +29,7 @@ class ApplicationController < Sinatra::Base
     redirect "posts/#{params[:id]}"
   end
 
-  post '/posts/:id/delete' do
+  delete '/posts/:id/delete' do
     binding.pry
   end
 
