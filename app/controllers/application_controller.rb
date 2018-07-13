@@ -29,6 +29,10 @@ class ApplicationController < Sinatra::Base
     redirect "posts/#{params[:id]}"
   end
 
+  delete '/posts/:id/delete' do
+    
+  end
+
 
   get "/posts" do
     @posts = Post.all
