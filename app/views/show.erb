@@ -2,6 +2,7 @@
 
  <%=@post[:name]%>
  <%=@post[:content]%>
+ binding.pry
  <form action="/posts/<%=@posts[:id]%>/delete" method="post">
    <input type="submit" value="delete">
  </form>
