@@ -2,6 +2,6 @@
 
 <%=@post[:name]%><br>
 <%=@post[:content]%><br>
-<form action="/posts/:id" method="post">
+<form action="/posts/:id" method="patch">
 <input id="hidden" type="hidden" name="_method" value="patch">
 </form>
