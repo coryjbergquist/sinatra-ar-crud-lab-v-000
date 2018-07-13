@@ -3,6 +3,6 @@
  <%=@post[:name]%>
  <%=@post[:content]%>
  <form action="/posts/<%=@posts[:id]%>/delete" method="post">
-   <input id="hidden" type="hidden" name="_method" value="patch">
+   <input id="hidden" type="hidden" name="_method" value="delete">
    <input type="submit" value="delete">
  </form>
